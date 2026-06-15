@@ -43,11 +43,11 @@ if [[ "$RUN_CHECKS" == "1" || "$RUN_CHECKS" == "true" ]]; then
   # 检查Python语法
   if command -v python3 >/dev/null 2>&1; then
     echo "Checking Python files..."
-    find . -path './.git' -prune -o -type f -name '*.py' -print 2>/dev/null | while IFS= read -r pyfile; do
+    while IFS= read -r pyfile; do
       if ! python3 -m py_compile "$pyfile" 2>/dev/null; then
         echo "  Warning: Syntax error in $pyfile"
       fi
-    done
+    done < <(find . -path './.git' -prune -o -type f -name '*.py' -print 2>/dev/null)
   fi
 
   # 检查Shell脚本语法
