@@ -1,0 +1,36 @@
+% Generated at 2026-06-15 16:08:46.200012
+
+
+\begin{table}[t]
+\centering
+\caption{Image Fidelity Comparison}
+\label{tab:fidelity}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Method} & \textbf{PSNR (dB)} & \textbf{SSIM} \\
+\midrule
+\textit{StableWatermark} & 26.00 & 0.9952 \\
+\textit{StegaStamp} & 53.68 & 1.0000 \\
+\textit{DWT+DCT} & 32.50 & 0.9200 \\
+\textit{MBEB} & 20.00 & 0.9778 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\caption{Robustness Comparison on COCO Dataset (Bit Accuracy \%)}
+\label{tab:robustness}
+\begin{tabular}{lccccccccccc}
+\toprule
+\textbf{Method} & \textbf{Clean} & \textbf{Gaussian Noise ($\sigma=0.03$)} & \textbf{Gaussian Blur ($k=5$)} & \textbf{JPEG ($Q=75$)} & \textbf{Center Crop (80\%)} & \textbf{Rotation ($\pm15^\circ$)} & \textbf{Salt-Pepper Noise ($p=0.05$)} & \textbf{Brightness} & \textbf{Contrast} & \textbf{Combined}\\
+\midrule
+\textit{StableWatermark} & 49.7 & 49.4 & 49.8 & 49.6 & 50.2 & 49.9 & 49.8 & 49.9 & 50.2 & 49.8 \\
+\textit{StegaStamp} & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 & 51.0 \\
+\textit{DWT+DCT} & 0.0 & 48.3 & 47.5 & 0.0 & 56.7 & 52.1 & 0.0 & 0.0 & 0.0 & 0.0 \\
+\textit{MBEB} & 51.6 & 51.8 & 50.5 & 51.2 & 51.2 & 51.2 & 51.8 & 51.5 & 51.6 & 51.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

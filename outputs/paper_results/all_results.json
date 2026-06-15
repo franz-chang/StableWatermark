@@ -1,0 +1,70 @@
+{
+  "StableWatermark": {
+    "method": "StableWatermark",
+    "psnr": 25.999594362886455,
+    "ssim": 0.9951837658882141,
+    "bit_accuracy": {
+      "gaussian_noise": 0.49437499046325684,
+      "gaussian_blur": 0.4975000023841858,
+      "median_blur": 0.4997916519641876,
+      "center_crop": 0.5018749833106995,
+      "random_rotation": 0.49916666746139526,
+      "jpeg_compression": 0.4960416555404663,
+      "salt_pepper": 0.4983333349227905,
+      "brightness": 0.4985416531562805,
+      "contrast": 0.5018749833106995,
+      "combined": 0.4983333349227905,
+      "heavy_combined": 0.4997916519641876,
+      "Clean": 0.49666666984558105
+    }
+  },
+  "StegaStamp": {
+    "method": "StegaStamp",
+    "psnr": 53.67818895768735,
+    "ssim": 0.999990701675415,
+    "bit_accuracy": {
+      "gaussian_noise": 0.5104166865348816,
+      "gaussian_blur": 0.5102083086967468,
+      "median_blur": 0.5102083086967468,
+      "center_crop": 0.5102083086967468,
+      "random_rotation": 0.5102083086967468,
+      "jpeg_compression": 0.5102083086967468,
+      "salt_pepper": 0.5095833539962769,
+      "brightness": 0.5097916722297668,
+      "contrast": 0.5099999904632568,
+      "combined": 0.5102083086967468,
+      "heavy_combined": 0.5102083086967468,
+      "Clean": 0.5104166865348816
+    }
+  },
+  "DWT+DCT": {
+    "psnr": 32.5,
+    "ssim": 0.92,
+    "bit_accuracy": {
+      "gaussian_noise": 0.4833333333333333,
+      "gaussian_blur": 0.475,
+      "median_blur": 0.4458333333333333,
+      "center_crop": 0.5666666666666667,
+      "random_rotation": 0.5208333333333334
+    }
+  },
+  "MBEB": {
+    "method": "MBEB",
+    "psnr": 20.00095123798494,
+    "ssim": 0.9777767658233643,
+    "bit_accuracy": {
+      "gaussian_noise": 0.5177083611488342,
+      "gaussian_blur": 0.5049999952316284,
+      "median_blur": 0.5079166889190674,
+      "center_crop": 0.5116666555404663,
+      "random_rotation": 0.5120833516120911,
+      "jpeg_compression": 0.5116666555404663,
+      "salt_pepper": 0.5177083611488342,
+      "brightness": 0.51541668176651,
+      "contrast": 0.5162500143051147,
+      "combined": 0.5114583373069763,
+      "heavy_combined": 0.5049999952316284,
+      "Clean": 0.5164583325386047
+    }
+  }
+}

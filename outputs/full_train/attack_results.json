@@ -1,0 +1,38 @@
+{
+  "original": {
+    "bit_accuracy": 0.5208333134651184
+  },
+  "brightness": {
+    "bit_accuracy": 0.5247395634651184
+  },
+  "center_crop": {
+    "bit_accuracy": 0.5377604365348816
+  },
+  "combined": {
+    "bit_accuracy": 0.5299479365348816
+  },
+  "contrast": {
+    "bit_accuracy": 0.5234375
+  },
+  "gaussian_blur": {
+    "bit_accuracy": 0.5221354365348816
+  },
+  "gaussian_noise": {
+    "bit_accuracy": 0.5325520634651184
+  },
+  "heavy_combined": {
+    "bit_accuracy": 0.52734375
+  },
+  "jpeg_compression": {
+    "bit_accuracy": 0.5299479365348816
+  },
+  "median_blur": {
+    "bit_accuracy": 0.5299479365348816
+  },
+  "random_rotation": {
+    "bit_accuracy": 0.5247395634651184
+  },
+  "salt_pepper": {
+    "bit_accuracy": 0.5325520634651184
+  }
+}

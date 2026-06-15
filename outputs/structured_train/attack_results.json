@@ -1,0 +1,14 @@
+{
+  "original": 0.5520833134651184,
+  "brightness": 0.5553385615348816,
+  "center_crop": 0.5520833134651184,
+  "combined": 0.55078125,
+  "contrast": 0.5579426884651184,
+  "gaussian_blur": 0.5520833134651184,
+  "gaussian_noise": 0.5592448115348816,
+  "heavy_combined": 0.5520833134651184,
+  "jpeg_compression": 0.5533854365348816,
+  "median_blur": 0.5520833134651184,
+  "random_rotation": 0.5520833134651184,
+  "salt_pepper": 0.5533854365348816
+}

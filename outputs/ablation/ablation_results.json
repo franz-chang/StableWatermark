@@ -1,0 +1,18 @@
+{
+  "Full Model": {
+    "Clean": 0.52,
+    "combined": 0.51
+  },
+  "w/o Frequency": {
+    "Clean": 0.51,
+    "combined": 0.48
+  },
+  "w/o Spatial": {
+    "Clean": 0.5,
+    "combined": 0.49
+  },
+  "w/o Mask": {
+    "Clean": 0.51,
+    "combined": 0.5
+  }
+}
