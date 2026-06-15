@@ -40,23 +40,31 @@ branch_ahead_behind() {
 }
 
 if [[ "$RUN_CHECKS" == "1" || "$RUN_CHECKS" == "true" ]]; then
-  # 检查Python语法
+  # 检查Python语法 - 排除 venv, lib, .git 等目录
   if command -v python3 >/dev/null 2>&1; then
     echo "Checking Python files..."
-    while IFS= read -r pyfile; do
+    find . \
+      -path './.git' -prune -o \
+      -path './venv' -prune -o \
+      -path './lib' -prune -o \
+      -path './site-packages' -prune -o \
+      -type f -name '*.py' -print 2>/dev/null | while IFS= read -r pyfile; do
       if ! python3 -m py_compile "$pyfile" 2>/dev/null; then
         echo "  Warning: Syntax error in $pyfile"
       fi
-    done < <(find . -path './.git' -prune -o -type f -name '*.py' -print 2>/dev/null)
+    done
   fi
 
-  # 检查Shell脚本语法
+  # 检查Shell脚本语法 - 同样排除 venv
   echo "Checking shell scripts..."
-  while IFS= read -r script; do
+  find . \
+    -path './.git' -prune -o \
+    -path './venv' -prune -o \
+    -type f -name '*.sh' -print 2>/dev/null | sort | while IFS= read -r script; do
     if ! bash -n "$script" 2>/dev/null; then
       echo "  Warning: Syntax error in $script"
     fi
-  done < <(find . -path './.git' -prune -o -type f -name '*.sh' -print 2>/dev/null | sort)
+  done
 fi
 
 if [[ "$#" -gt 0 ]]; then
